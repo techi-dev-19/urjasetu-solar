@@ -415,14 +415,6 @@ const Index = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="text-lg border-white/30 text-white hover:bg-white/10"
-            >
-              <a href="tel:+1234567890">Call Us Now</a>
-            </Button>
           </div>
         </div>
       </section>
@@ -431,4 +423,5 @@ const Index = () => {
 };
 
 export default Index;
+
 
