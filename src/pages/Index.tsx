@@ -173,14 +173,6 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="text-lg border-white/30 text-white hover:bg-white/10"
-              >
-                <Link to="/contact">Get Free Quote</Link>
-              </Button>
             </div>
           </div>
         </div>
@@ -439,3 +431,4 @@ const Index = () => {
 };
 
 export default Index;
+
