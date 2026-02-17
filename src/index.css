@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Solar Energy Company - Orange/Yellow Design System
+   All colors MUST be HSL.
+*/  
+
+@layer base {
+  :root {
+    --background: 45 30% 98%;
+    --foreground: 20 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 20% 15%;
+
+    --primary: 30 95% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 100% 60%;
+    --secondary-foreground: 20 20% 15%;
+
+    --muted: 40 30% 94%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 35 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 30 95% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom solar theme tokens */
+    --solar-dark: 220 25% 18%;
+    --solar-darker: 220 30% 12%;
+    --solar-orange: 30 95% 50%;
+    --solar-yellow: 45 100% 55%;
+    --solar-gold: 40 90% 48%;
+    --solar-warm: 35 100% 60%;
+    --solar-light: 45 40% 96%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 30 95% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 30% 94%;
+    --sidebar-accent-foreground: 20 20% 15%;
+    --sidebar-border: 35 20% 88%;
+    --sidebar-ring: 30 95% 50%;
+  }
+
+  .dark {
+    --background: 220 30% 10%;
+    --foreground: 45 20% 95%;
+
+    --card: 220 25% 14%;
+    --card-foreground: 45 20% 95%;
+
+    --popover: 220 25% 14%;
+    --popover-foreground: 45 20% 95%;
+
+    --primary: 30 95% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 80% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 20%;
+    --muted-foreground: 40 15% 65%;
+
+    --accent: 35 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 30 95% 50%;
+
+    --sidebar-background: 220 30% 12%;
+    --sidebar-foreground: 45 20% 95%;
+    --sidebar-primary: 30 95% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 20%;
+    --sidebar-accent-foreground: 45 20% 95%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 30 95% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes for gradients */
+@layer utilities {
+  .gradient-solar {
+    background: linear-gradient(135deg, hsl(var(--solar-orange)) 0%, hsl(var(--solar-yellow)) 100%);
+  }
+  
+  .gradient-solar-dark {
+    background: linear-gradient(135deg, hsl(var(--solar-dark)) 0%, hsl(var(--solar-darker)) 100%);
+  }
+  
+  .text-gradient-solar {
+    background: linear-gradient(135deg, hsl(var(--solar-orange)) 0%, hsl(var(--solar-yellow)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
